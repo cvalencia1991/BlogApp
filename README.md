@@ -5,7 +5,7 @@
   <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>Hello World</b></h3>
+  <h3><b>Blog App</b></h3>
 
 </div>
 
@@ -37,13 +37,12 @@
 
 
 
-this is the first interaction using Ruby on Rails, create an interact with the routes
+this is the first interaction using Ruby on Rails, create an interact with the Blog Application
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
 
 <details>
   <summary>Client</summary>
@@ -52,6 +51,12 @@ this is the first interaction using Ruby on Rails, create an interact with the r
   </ul>
 </details>
 
+<details>
+<summary>server</summary>
+  <ul>
+    <li><a href="https://www.postgresql.org/">Ruby on Rails</a></li>
+  </ul>
+</details>
 
 <details>
 <summary>Database</summary>
@@ -60,25 +65,22 @@ this is the first interaction using Ruby on Rails, create an interact with the r
   </ul>
 </details>
 
-<!-- Features -->
-
 ### Key Features <a name="key-features"></a>
 
 > Describe between 1-3 key features of the application.
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **Add connection to the PostgreSQL**
+- **Create Tables and foreing Keys**
+- **using Migrate to create the databases**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [Live Demo Link](Woking on it)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -86,59 +88,51 @@ this is the first interaction using Ruby on Rails, create an interact with the r
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
-
 To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
 In order to run this project you need:
 
-<!--
-Example command:
 
 ```sh
  gem install rails
 ```
- -->
+
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-<!--
-Example commands:
 
 ```sh
   cd my-folder
   git clone git@github.com:myaccount/my-project.git
 ```
---->
+
 
 ### Install
 
 Install this project with:
 
-<!--
-Example command:
-
 ```sh
   cd my-project
-  gem install
+  gem install rails
+  Bundle Install
 ```
---->
+
 
 ### Usage
 
 To run the project, execute the following command:
 
-<!--
+
 Example command:
 
 ```sh
-  rails server
+  rails server or rails s
 ```
---->
+
 
 ### Run tests
 
@@ -156,33 +150,25 @@ Example command:
 
 You can deploy this project using:
 
-<!--
-Example:
-
 ```sh
-
+ rails s
+ rails db:migrate
 ```
- -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- AUTHORS -->
+
 
 ## 👥 Authors <a name="authors"></a>
 
 > Mention all of the collaborators of this project.
 
-👤 **Author1**
+👤 **Cesar Alberto Valencia Aguilar**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@cvalencia1991](https://github.com/cvalencia1991)
+- Twitter: [@cvalenciaguilar](https://twitter.com/cvalenciaguilar)
+- LinkedIn: [@cvalencia1991](https://www.linkedin.com/in/cvalenciaguilar/)
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -190,7 +176,6 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
 
 - [ ] **[new_feature_1]**
 - [ ] **[new_feature_2]**
@@ -212,23 +197,20 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
 
-If you like this project...
+Please ⭐️ this repository if you found the project useful.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
 
-I would like to thank...
+I would like to thank ruby on rails guide
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FAQ (optional) -->
+
 
 ## ❓ FAQ <a name="faq"></a>
 
