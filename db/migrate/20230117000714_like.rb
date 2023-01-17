@@ -5,5 +5,6 @@ class Like < ActiveRecord::Migration[7.0]
       t.timestamps
     end
     add_index :Authoid, :Postid
+    add_reference :Like, :User, foreign_key: true
   end
 end
