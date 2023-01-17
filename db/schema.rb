@@ -14,36 +14,36 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_17_152610) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "Comment", force: :cascade do |t|
-    t.integer "Authoid"
-    t.integer "Postid"
+  create_table "Like", force: :cascade do |t|
+    t.integer "authoid"
+    t.integer "postid"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "comment", force: :cascade do |t|
+    t.integer "authoid"
+    t.integer "postid"
     t.text "text"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "Like", force: :cascade do |t|
-    t.integer "Authoid"
-    t.integer "Postid"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "Post", force: :cascade do |t|
-    t.integer "Authorid"
-    t.integer "CommentsCounter"
-    t.integer "LikesCounter"
+  create_table "post", force: :cascade do |t|
+    t.integer "authorid"
+    t.integer "commentsCounter"
+    t.integer "likesCounter"
     t.string "title"
     t.text "text"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "User", force: :cascade do |t|
-    t.text "Name"
-    t.text "Photo"
-    t.text "Bio"
-    t.integer "PostsCounter"
+  create_table "user", force: :cascade do |t|
+    t.text "name"
+    t.text "photo"
+    t.text "bio"
+    t.integer "postscounter"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
