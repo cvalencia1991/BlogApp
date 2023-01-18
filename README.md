@@ -171,19 +171,17 @@ You can deploy this project using:
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- Deploy in brower **Deploy the Project Using the squema of Ruby on Rails**
+- Add information in Database **You can interact with the Blog App interface**
+- Interact the User **The User can comment in real application of menu**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/cvalencia1991/BlogApp/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
