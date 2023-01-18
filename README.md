@@ -35,8 +35,6 @@
 
 # 📖 Hello world<a name="about-project"></a>
 
-
-
 this is the first interaction using Ruby on Rails, create an interact with the Blog Application
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -47,7 +45,7 @@ this is the first interaction using Ruby on Rails, create an interact with the B
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="https://reactjs.org/">Ruby</a></li>
   </ul>
 </details>
 
@@ -67,24 +65,19 @@ this is the first interaction using Ruby on Rails, create an interact with the B
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
-- **Add connection to the PostgreSQL**
-- **Create Tables and foreing Keys**
-- **using Migrate to create the databases**
+- **Interact the Connection With the PostgreSQL**
+- **Add Active Record and associations & queries in Methods**
+- **Implement Active Record in CRUD Terminal**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
-
 - [Live Demo Link](Woking on it)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -97,6 +90,7 @@ In order to run this project you need:
 
 ```sh
  gem install rails
+ bundle install
 ```
 
 
@@ -131,6 +125,7 @@ Example command:
 
 ```sh
   rails server or rails s
+  rails c
 ```
 
 
