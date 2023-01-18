@@ -2,8 +2,8 @@ class CreateUser < ActiveRecord::Migration[7.0]
   def change
     create_table :user do |t|
       t.text :name
-      t.text :bio
       t.text :photo
+      t.text :bio
       t.integer :postscounter
       t.timestamps
     end
@@ -11,3 +11,5 @@ class CreateUser < ActiveRecord::Migration[7.0]
     add_foreign_key :user,:post, column: :postscounter
   end
 end
+
+

@@ -5,7 +5,8 @@ class CreateLike < ActiveRecord::Migration[7.0]
       t.integer :postid
       t.timestamps
     end
-    add_index :like, :authoid
-    add_foreign_key :like,:user column: :authoid
+    add_index , :authoid
+    add_index :like, :postid
+    add_foreign_key :like,:user, column: :authorid
   end
 end

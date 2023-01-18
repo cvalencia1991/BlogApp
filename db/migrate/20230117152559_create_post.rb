@@ -10,7 +10,5 @@ class CreatePost < ActiveRecord::Migration[7.0]
     end
     add_index :post, :authorid
     add_foreign_key :post,:like,column: :authorid
-    add_foreign_key :post, :comment, column: :authorid
-    add_foreign_key :post, :user, column: :authorid
   end
 end
