@@ -6,7 +6,7 @@ class Post < ApplicationRecord
 
   def update_post
     counter = Post.count('authorid')
-    User.update(postscounter: counter )
+    User.update(postscounter: counter)
   end
 
   def recents_comments
