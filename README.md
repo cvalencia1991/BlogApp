@@ -2,7 +2,6 @@
 
 <div align="center">
 
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
   <h3><b>Blog App</b></h3>
@@ -35,8 +34,6 @@
 
 # 📖 Hello world<a name="about-project"></a>
 
-
-
 this is the first interaction using Ruby on Rails, create an interact with the Blog Application
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -47,7 +44,7 @@ this is the first interaction using Ruby on Rails, create an interact with the B
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="https://reactjs.org/">Ruby</a></li>
   </ul>
 </details>
 
@@ -67,24 +64,19 @@ this is the first interaction using Ruby on Rails, create an interact with the B
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
-- **Add connection to the PostgreSQL**
-- **Create Tables and foreing Keys**
-- **using Migrate to create the databases**
+- **Interact the Connection With the PostgreSQL**
+- **Add Active Record and associations & queries in Methods**
+- **Implement Active Record in CRUD Terminal**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
-
 - [Live Demo Link](Woking on it)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -97,6 +89,7 @@ In order to run this project you need:
 
 ```sh
  gem install rails
+ bundle install
 ```
 
 
@@ -131,6 +124,7 @@ Example command:
 
 ```sh
   rails server or rails s
+  rails c
 ```
 
 
@@ -177,19 +171,17 @@ You can deploy this project using:
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- Deploy in brower **Deploy the Project Using the squema of Ruby on Rails**
+- Add information in Database **You can interact with the Blog App interface**
+- Interact the User **The User can comment in real application of menu**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/cvalencia1991/BlogApp/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
