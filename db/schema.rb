@@ -45,14 +45,14 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_17_152610) do
 
   create_table "user", force: :cascade do |t|
     t.text "name"
-    t.text "bio"
     t.text "photo"
+    t.text "bio"
     t.integer "postscounter"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["name"], name: "index_user_on_name"
   end
 
-  add_foreign_key "post", "comment", column: "authorid"
+  add_foreign_key "post", "\"like\"", column: "authorid"
   add_foreign_key "user", "post", column: "postscounter"
 end
