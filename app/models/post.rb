@@ -9,4 +9,7 @@ class Post < ApplicationRecord
     User.update(postscounter: counter )
   end
 
+  def recents_comments
+    Comment.limit(5).order(created_at: :desc)
+  end
 end
