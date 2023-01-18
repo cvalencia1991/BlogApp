@@ -8,5 +8,6 @@ class CreateUsers < ActiveRecord::Migration[7.0]
       t.integer :PostsCounter
     end
     add_index :users, :name
+    add_foreign_key :users, :posts, column: :PostsCounter
   end
 end
