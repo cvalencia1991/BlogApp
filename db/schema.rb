@@ -14,19 +14,22 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_17_152610) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "Like", force: :cascade do |t|
-    t.integer "authoid"
-    t.integer "postid"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "comment", force: :cascade do |t|
     t.integer "authoid"
     t.integer "postid"
     t.text "text"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["authoid"], name: "index_comment_on_authoid"
+    t.index ["postid"], name: "index_comment_on_postid"
+  end
+
+  create_table "like", force: :cascade do |t|
+    t.integer "authoid"
+    t.integer "postid"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["authoid"], name: "index_like_on_authoid"
   end
 
   create_table "post", force: :cascade do |t|
@@ -37,15 +40,19 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_17_152610) do
     t.text "text"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["authorid"], name: "index_post_on_authorid"
   end
 
   create_table "user", force: :cascade do |t|
     t.text "name"
-    t.text "photo"
     t.text "bio"
+    t.text "photo"
     t.integer "postscounter"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["name"], name: "index_user_on_name"
   end
 
+  add_foreign_key "post", "comment", column: "authorid"
+  add_foreign_key "user", "post", column: "postscounter"
 end
