@@ -67,6 +67,8 @@ this is the first interaction using Ruby on Rails, create an interact with the B
 - **Interact the Connection With the PostgreSQL**
 - **Add Active Record and associations & queries in Methods**
 - **Implement Active Record in CRUD Terminal**
+- **Implement Testing for the Models**
+- **Add Validates for the input values of the tables**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -132,13 +134,13 @@ Example command:
 
 To run tests, run the following command:
 
-<!--
+
 Example command:
 
 ```sh
-  bin/rails test test/models/article_test.rb
+  rspec or rspec/file_rspec.rb
 ```
---->
+
 
 ### Deployment
 
@@ -147,15 +149,14 @@ You can deploy this project using:
 ```sh
  rails s
  rails db:migrate
+ rails c
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
 
 👤 **Cesar Alberto Valencia Aguilar**
 
@@ -166,7 +167,6 @@ You can deploy this project using:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
@@ -185,7 +185,6 @@ Feel free to check the [issues page](https://github.com/cvalencia1991/BlogApp/is
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- SUPPORT -->
 
 ## ⭐️ Show your support <a name="support"></a>
 
@@ -203,10 +202,8 @@ I would like to thank ruby on rails guide
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-
 ## ❓ FAQ <a name="faq"></a>
 
-> Add at least 2 questions new developers would ask when they decide to use your project.
 
 - **[Question_1]**
 
