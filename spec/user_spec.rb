@@ -1,8 +1,10 @@
 require 'rails_helper'
 RSpec.describe User, type: :model do
-  subject { User.create(name: 'Tom', photo: 'https://unsplash.com/photos/F_-0BxGuVvo',
-    bio: 'Teacher from Mexico.', postscounter:0) }
-  before {subject.save}
+  subject do
+    User.create(name: 'Tom', photo: 'https://unsplash.com/photos/F_-0BxGuVvo',
+                bio: 'Teacher from Mexico.', postscounter: 0)
+  end
+  before { subject.save }
 
   it 'name not be empty' do
     subject.name = nil
@@ -14,8 +16,7 @@ RSpec.describe User, type: :model do
   end
 
   it 'postcounter not have to be bigger than 0' do
-    subject.postscounter = "alfa"
+    subject.postscounter = 'alfa'
     expect(subject).to_not be_valid
   end
-
 end
