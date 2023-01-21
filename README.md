@@ -44,14 +44,14 @@ this is the first interaction using Ruby on Rails, create an interact with the B
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://reactjs.org/">Ruby</a></li>
+    <li><a href="https://www.ruby-lang.org/en/">Ruby</a></li>
   </ul>
 </details>
 
 <details>
 <summary>server</summary>
   <ul>
-    <li><a href="https://www.postgresql.org/">Ruby on Rails</a></li>
+    <li><a href="https://rubyonrails.org/">Ruby on Rails</a></li>
   </ul>
 </details>
 
