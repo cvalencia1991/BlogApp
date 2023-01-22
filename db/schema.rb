@@ -39,8 +39,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_18_164351) do
     t.text "text"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "commentscounter"
-    t.integer "likescounter"
+    t.integer "commentscounter", default: 0
+    t.integer "likescounter", default: 0
     t.index ["authorid"], name: "index_posts_on_authorid"
   end
 
@@ -50,13 +50,12 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_18_164351) do
     t.text "bio"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "postscounter"
+    t.integer "postscounter", default: 0
     t.index ["name"], name: "index_users_on_name"
   end
 
   add_foreign_key "comments", "posts", column: "postid"
   add_foreign_key "comments", "users", column: "authorid"
   add_foreign_key "likes", "users", column: "authorid"
-  add_foreign_key "posts", "likes", column: "likescounter"
   add_foreign_key "posts", "users", column: "authorid"
 end
