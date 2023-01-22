@@ -5,11 +5,10 @@ class CreatePosts < ActiveRecord::Migration[7.0]
       t.string :title
       t.text :text
       t.timestamps
-      t.integer :commentscounter
-      t.integer :likescounter
+      t.integer :commentscounter, default:0
+      t.integer :likescounter ,default:0
     end
     add_index :posts, :authorid
-    add_foreign_key :posts, :likes, column: :likescounter
     add_foreign_key :posts, :users, column: :authorid
   end
 end
