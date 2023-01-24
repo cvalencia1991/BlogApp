@@ -1,0 +1,38 @@
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+h2{
+    margin: 0;
+}
+
+.styleusers{
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wraperusers{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 2em;
+}
+
+.title{
+    border: 1px solid black;
+    width: 15em;
+}
+
+.counter{
+    display: flex;
+    flex-direction: row-reverse;
+}
