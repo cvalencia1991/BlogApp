@@ -19,9 +19,9 @@ RSpec.describe PostsController, type: :controller do
       get :index, params: { id: 1, user_id: 1 }
       expect(response).to have_http_status(:success)
     end
-    it "returns the correct placeholder text" do
-      get :show,params: { id: 1, user_id: 1 }
-      expect(assigns(:posts)).to eq("Here is a list of posts for a given user")
+    it 'returns the correct placeholder text' do
+      get :show, params: { id: 1, user_id: 1 }
+      expect(assigns(:posts)).to eq('Here is a list of posts for a given user')
     end
   end
 end
