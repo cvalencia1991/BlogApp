@@ -11,7 +11,7 @@ RSpec.describe UsersController, type: :request do
       expect(response).to render_template(:index)
     end
     it 'renders the show template' do
-      get ("/users")
+      get('/users')
       expect(response.body).to include('Welcome to user index page')
     end
   end
