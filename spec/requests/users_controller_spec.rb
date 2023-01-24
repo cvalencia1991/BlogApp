@@ -10,7 +10,7 @@ RSpec.describe UsersController, type: :request do
       get('/users')
       expect(response).to render_template(:index)
     end
-    it 'renders the show template' do
+    it 'ensures the body to include the correct placeholder text' do
       get('/users')
       expect(response.body).to include('Welcome to user index page')
     end
@@ -25,7 +25,7 @@ RSpec.describe UsersController, type: :request do
       get '/users/:id', params: { id: 1 }
       expect(response).to render_template(:show)
     end
-    it 'returns render template Show' do
+    it 'ensures the body to include the correct placeholder text' do
       get '/users/:id', params: { id: 1 }
       expect(response.body).to include('These are a user for a Id')
     end
