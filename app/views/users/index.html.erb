@@ -1,11 +1,12 @@
 <h1>Here are the users!</h1>
 
 <div class='wrapper'>
-
 <div class= 'wraperusers'>
         <% @users.each do |user|%>
-        <div class= 'styleusers'>
-       <%= image_tag user.photo,alt: "image user" %>
+        <div id='<%=user.id%>' class= 'styleusers'>
+        <div>
+            <%= image_tag user.photo,alt: "image user" %>
+       </div>
             <div class='title'>
                <h2><%= link_to user.name, user_path(user) %></h2>
                 <div class = 'counter'>
