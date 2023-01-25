@@ -8,8 +8,8 @@ class Post < ApplicationRecord
   after_save :update_post
 
   def update_post
-    counter = Post.count('authorid')
-    User.update(postscounter: counter)
+    counter = Post.where(authorid:).count
+    author.update(postscounter: counter)
   end
 
   def recents_comments

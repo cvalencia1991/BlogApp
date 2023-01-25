@@ -1,1 +1,34 @@
-<h1>Posts for the users<h1>
+<h1>Posts for the users</h1>
+   <div class= 'styleusers'>
+        <%= image_tag @user.photo,alt: "image user" %>
+        <div class='title'>
+               <h2><%= @user.name%></h2>
+                <div class = 'counter'>
+                    <p>posts counters:<%= @user.postscounter%></p>
+                </div>
+        </div>
+    </div>
+        <% @user.recents_post.each do |post| %>
+            <div class='titleposts'>
+               <h4>Post:<%= post.id%> <%=post.title%></h4>
+               <p><%= post.text%></p>
+               <p>
+                <div class = 'counter'>
+                    <p>comments:<%=post.commentscounter%></p>
+                    <p>likes: <%=post.likescounter%></p>
+                </div>
+            </div>
+            <div>
+            <% @posts.recents_comments.each do |comment|%>
+                <%=comment.author.name%>:<%=comment.text%>
+            <%end%>
+            </div>
+        <% end %>
+<%
+=begin%>
+
+   <% @posts.each do |post|%>
+            <%=post.author.name%> : <%= %>
+            <%end%>
+<%
+=end%>
