@@ -22,7 +22,7 @@
                 </div>
             </div>
             <div class='stylecomments'>
-                <% @posts.recents_comments.each do |comment|%>
+                <% post.recents_comments.each do |comment|%>
                 <ul>
                     <li> <%=comment.author.name%>:<%=comment.text%></li>
                 </ul>
