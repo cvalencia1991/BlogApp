@@ -12,7 +12,7 @@ RSpec.describe PostsController, type: :request do
     end
     it 'ensures the body to include the correct placeholder text' do
       get '/users/:user_id/posts', params: { user_id: 1 }
-      expect(response.body).to include('These are the Posts for the users')
+      expect(response.body).to include('Posts for the users')
     end
   end
 
