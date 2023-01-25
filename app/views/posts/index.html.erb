@@ -18,17 +18,14 @@
                     <p>likes: <%=post.likescounter%></p>
                 </div>
             </div>
-            <div>
+            <div class='stylecomments'>
             <% @posts.recents_comments.each do |comment|%>
                 <%=comment.author.name%>:<%=comment.text%>
             <%end%>
             </div>
-        <% end %>
-<%
-=begin%>
-
-   <% @posts.each do |post|%>
-            <%=post.author.name%> : <%= %>
-            <%end%>
-<%
-=end%>
+    <% end %>
+    <%= link_to user_post_path(@user, @posts) do %>
+        <button class='buttonstyle' type='button'>
+            pagination
+        </button>
+    <% end %>
