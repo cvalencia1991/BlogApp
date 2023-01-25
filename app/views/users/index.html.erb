@@ -5,7 +5,7 @@
         <% @users.each do |user|%>
         <div id='<%=user.id%>' class= 'styleusers'>
         <div>
-            <%= image_tag user.photo,alt: "image user" %>
+        <img src='<%=user.photo%>' alt="img user">
        </div>
             <div class='title'>
                <h2><%= link_to user.name, user_path(user) %></h2>
@@ -17,3 +17,4 @@
      <%end%>
     </div>
 </div>
+

@@ -8,9 +8,12 @@
                 </div>
         </div>
     </div>
+    <div class= 'wraperusers'>
         <% @user.recents_post.each do |post| %>
             <div class='titleposts'>
+            <%= link_to user_post_path(@user, post) do %>
                <h4>Post:<%= post.id%> <%=post.title%></h4>
+            <% end %>
                <p><%= post.text%></p>
                <p>
                 <div class = 'counter'>
@@ -19,13 +22,14 @@
                 </div>
             </div>
             <div class='stylecomments'>
-            <% @posts.recents_comments.each do |comment|%>
-                <%=comment.author.name%>:<%=comment.text%>
+                <% @posts.recents_comments.each do |comment|%>
+                <ul>
+                    <li> <%=comment.author.name%>:<%=comment.text%></li>
+                </ul>
             <%end%>
             </div>
-    <% end %>
-    <%= link_to user_post_path(@user, @posts) do %>
+        <% end %>
         <button class='buttonstyle' type='button'>
             pagination
         </button>
-    <% end %>
+    </div>
