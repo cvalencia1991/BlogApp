@@ -23,14 +23,13 @@
                     <p>comments:<%=post.commentscounter%></p>
                     <p>likes: <%=post.likescounter%></p>
                 </div>
-        </div>
+            </div>
         <% end %>
         <button class='buttonstyle' type='button'>
-        <%=link_to user_posts_path(@user) do%>
-        See all Posts
-        <% end %>
+            <%=link_to user_posts_path(@user) do%>
+            See all Posts
+            <% end %>
         </button>
-
     </div>
 
 
