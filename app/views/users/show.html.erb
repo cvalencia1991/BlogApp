@@ -1,1 +1,38 @@
-<h1>These are a user for a Id<h1>
+<h1>These are a user for Information</h1>
+
+    <div class= 'styleusers'>
+        <%= image_tag @user.photo,alt: "image user" %>
+        <div class='title'>
+               <h2><%= @user.name%></h2>
+                <div class = 'counter'>
+                    <p>posts counters:<%= @user.postscounter%></p>
+                </div>
+        </div>
+    </div>
+    <div class="bioinfo">
+        <h3>Bio</h3>
+        <p><%= @user.bio %></p>
+    </div>
+    <div class= 'wraperusers'>
+        <% @user.recents_post.each do |post| %>
+            <div class='titleposts'>
+               <h4>Post:<%= post.id%> <%=post.title%></h4>
+               <p><%= post.text%></p>
+               <p>
+                <div class = 'counter'>
+                    <p>comments:<%=post.commentscounter%></p>
+                    <p>likes: <%=post.likescounter%></p>
+                </div>
+            </div>
+        <% end %>
+        <button class='buttonstyle' type='button'>
+            <%=link_to user_posts_path(@user) do%>
+            See all Posts
+            <% end %>
+        </button>
+    </div>
+
+
+
+
+

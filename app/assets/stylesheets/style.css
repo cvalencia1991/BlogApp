@@ -1,0 +1,73 @@
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.styleusers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wraperusers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  margin: 1em;
+}
+
+.title {
+  border: 1px solid black;
+  width: 15em;
+}
+
+.titleposts {
+  border: 1px solid black;
+  width: 95%;
+}
+
+.counter {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 1em;
+}
+
+.bioinfo {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  margin: 1em;
+}
+
+.buttonstyle {
+  display: flex;
+}
+
+.stylecomments {
+  border: 1px solid black;
+  width: 95%;
+}
+
+.wrapperpost {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}

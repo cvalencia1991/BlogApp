@@ -1,2 +1,17 @@
-<h1><%= @posts %></h1>
+<h1>Post information!</h1>
+
+<div>
+    <div class='wrapperpost'>
+        <h2>Post:<%=@post.title %> by <%= @post.author.name%></h2>
+        <p>Comments: <%= @post.commentscounter%> Likes: <%= @post.likescounter%></p>
+    </div>
+     <p><%=@post.text%></p>
+</div>
+<div class='stylecomments'>
+    <% @post.recents_comments.each do |comment|%>
+        <ul>
+            <li> <%=comment.author.name%>:<%=comment.text%></li>
+        </ul>
+    <%end%>
+</div>
 

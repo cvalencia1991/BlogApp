@@ -71,7 +71,9 @@ this is the first interaction using Ruby on Rails, create an interact with the B
 - **Add Validates for the input values of the tables**
 - **Add Routes for Users and posts**
 - **Add Controllers for the Users and Posts**
+- **Deploy the information in the views from the App**
 - **Testing Controllers**
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
