@@ -15,3 +15,11 @@
     <%end%>
 </div>
 
+    <button class='buttonstyle' type='button'>
+        <%=link_to new_comment_path(@comment) do%>
+            Create Comment
+    <% end %>
+    </button>
+    <%= form_with url: user_post_likes_path(@post,@user), model: @like , method: :post ,scope: :like do |f| %>
+        <%= f.submit "Create Like" %>
+    <% end %>
