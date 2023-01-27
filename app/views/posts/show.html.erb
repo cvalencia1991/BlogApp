@@ -21,8 +21,8 @@
     <% end %>
     </button>
 
-<%= form_with model: @like do |f| %>
-    <%= f.hidden_field :postid, value: @post.id %>
-    <%= f.hidden_field :authorid, value: @post.author.id %>
-    <%= f.submit "Like" %>
-<% end %>
+    <%= form_with model: @like,  url: user_post_likes_path(@post.id), method: :post do |f| %>
+        <%= f.hidden_field :postid, value: @post.id %>
+        <%= f.hidden_field :authorid, value: @post.author.id %>
+        <%= f.submit " Create Like", class: 'submit' %>
+    <% end %>

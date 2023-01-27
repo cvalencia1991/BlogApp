@@ -1,10 +1,11 @@
 class LikesController < ApplicationController
+
   def create
-    @like = Like.new(:user_id, :id)
+    @like = Like.new(authorid: params[:user_id],postid: params[:id])
     if @like.save
-      redirect_to user_path(current_user), notice: 'Like was successfully created.'
+      redirect_to user_posts_path, notice: 'Like was successfully created.'
     else
-      redirect_to user_path(current_user), alert: 'There was an error creating your like. Please try again.'
+      redirect_to user_posts_path, alert: 'There was an error creating your like. Please try again.'
     end
   end
 end
