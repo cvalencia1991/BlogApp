@@ -6,9 +6,9 @@ class CommentsController < ApplicationController
   def create
     @comment = Comment.new(comment_params)
     if @comment.save
-        redirect_to user_posts_path(current_user), notice: 'Comment was successfully created.'
+      redirect_to user_posts_path(current_user), notice: 'Comment was successfully created.'
     else
-        render :new
+      render :new
     end
   end
 
