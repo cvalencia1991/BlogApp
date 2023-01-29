@@ -1,6 +1,8 @@
 <h1>Create Comment</h1>
-<%= form_with model: @comment do |f| %>
+<%= form_with url: user_post_comments_path(user_id:params[:user_id], post_id: params[:post_id]),  model: @comment do |f| %>
     <div>
+    <%= f.hidden_field :post_id, value:  params[:post_id]%>
+    <%= f.hidden_field :user_id, value: params[:user_id] %>
     <%= f.label :text %>
     <%= f.text_area :text %>
     </div>
