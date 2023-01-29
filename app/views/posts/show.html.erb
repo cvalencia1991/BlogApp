@@ -20,6 +20,8 @@
             Create Comment
     <% end %>
     </button>
-    <%= form_with url: user_post_likes_path(@post,@user), model: @like , method: :post ,scope: :like do |f| %>
+    <%= form_with url: user_post_likes_path(user_id:params[:user_id], post_id: params[:id]), model: @like , method: :post do |f| %>
+        <%= f.hidden_field :post_id , value: @post.id %>
+         <%= f.hidden_field :author_id , value: @user.id %>
         <%= f.submit "Create Like" %>
     <% end %>
