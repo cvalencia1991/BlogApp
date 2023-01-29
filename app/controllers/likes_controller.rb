@@ -1,6 +1,6 @@
 class LikesController < ApplicationController
   def create
-    like = Like.new(authorid: current_user.id, postid: params[:post_id])
+    like = Like.new(author_id: current_user.id, post_id: params[:post_id])
     return unless like.save
 
     redirect_to user_path(current_user), notice: 'Like was successfully created.'

@@ -5,7 +5,7 @@
         <div class='title'>
                <h2><%= @user.name%></h2>
                 <div class = 'counter'>
-                    <p>posts counters:<%= @user.postscounter%></p>
+                    <p>posts counters:<%= @user.posts_counter%></p>
                 </div>
         </div>
     </div>
@@ -20,8 +20,8 @@
                <p><%= post.text%></p>
                <p>
                 <div class = 'counter'>
-                    <p>comments:<%=post.commentscounter%></p>
-                    <p>likes: <%=post.likescounter%></p>
+                    <p>comments:<%=post.comments_counter%></p>
+                    <p>likes: <%=post.likes_counter%></p>
                 </div>
             </div>
         <% end %>
