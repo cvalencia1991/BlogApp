@@ -22,7 +22,7 @@ RSpec.describe User, type: :system do
     end
 
     it 'I can see the users first 3 posts.' do
-      @posts = Post.where(author_id:1).limit(3).order(created_at: :desc)
+      @posts = Post.where(author_id: 1).limit(3).order(created_at: :desc)
       @posts.each do |post|
         visit user_path(1)
         expect(page).to have_content(post.title)
@@ -38,13 +38,13 @@ RSpec.describe User, type: :system do
       visit user_path(1)
       post_id = Post.last.id
       post_author = Post.last.author_id
-      click_link "Post:4"
-      expect(page).to have_current_path(user_post_path(post_author,post_id))
+      click_link 'Post:4'
+      expect(page).to have_current_path(user_post_path(post_author, post_id))
     end
 
     it 'When I click to see all posts, it redirects me to the users posts index page.' do
       visit user_path(1)
-      click_link "See all Posts"
+      click_link 'See all Posts'
       expect(page).to have_current_path(user_posts_path(1))
     end
   end
