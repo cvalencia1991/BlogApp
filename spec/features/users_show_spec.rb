@@ -40,7 +40,6 @@ RSpec.describe User, type: :system do
       post_author = Post.last.author_id
       click_link "Post:4"
       expect(page).to have_current_path(user_post_path(post_author,post_id))
-
     end
 
     it 'When I click to see all posts, it redirects me to the users posts index page.' do

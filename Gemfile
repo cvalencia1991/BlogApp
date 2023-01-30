@@ -2,8 +2,8 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.1.3'
-gem 'rack-proxy'
 gem 'bullet', group: 'development'
+gem 'rack-proxy'
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 7.0.4'
 
@@ -43,8 +43,6 @@ gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', require: false
 
-
-
 # Use Sass to process CSS
 # gem "sassc-rails"
 
@@ -61,7 +59,6 @@ group :development, :test do
   # The following gems aids with the nuts and bolts
   # of interacting with the browser.
   gem 'webdrivers'
-
 end
 
 group :development do
@@ -77,8 +74,7 @@ end
 
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
-  gem 'capybara'
   gem 'rails-controller-testing'
-  gem 'selenium-webdriver'
   gem 'rspec-rails', '~> 6.0.0'
+  gem 'selenium-webdriver'
 end
