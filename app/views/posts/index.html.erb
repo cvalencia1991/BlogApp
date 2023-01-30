@@ -29,7 +29,9 @@
                 <%end%>
             </div>
         <% end %>
+        <%if @user.posts.length > 3%>
         <button class='buttonstyle' type='button'>
             pagination
         </button>
+        <%end%>
     </div>
