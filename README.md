@@ -170,6 +170,12 @@ You can deploy this project using:
 - Twitter: [@cvalenciaguilar](https://twitter.com/cvalenciaguilar)
 - LinkedIn: [@cvalencia1991](https://www.linkedin.com/in/cvalenciaguilar/)
 
+👤 **David Tamayo**
+
+- GitHub: [@IngDavidTM](https://github.com/IngDavidTM)
+- Twitter: [@David5TM](https://twitter.com/David5TM)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/ing-david-tamayo)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -211,13 +217,13 @@ I would like to thank ruby on rails guide
 ## ❓ FAQ <a name="faq"></a>
 
 
-- **[Question_1]**
+- **Do I need node installed?**
 
-  - [Answer_1]
+  - Yes you do
 
-- **[Question_2]**
+- **Do I need internet Access**
 
-  - [Answer_2]
+  - Not necessary
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
