@@ -9,7 +9,7 @@
         </div>
     </div>
     <div class= 'wraperusers'>
-        <% @user.recents_post.each do |post| %>
+        <% @user.posts.each do |post| %>
             <div class='titleposts'>
             <%= link_to user_post_path(@user, post) do %>
                <h4>Post:<%= post.id%> <%=post.title%></h4>
@@ -22,11 +22,11 @@
                 </div>
             </div>
             <div class='stylecomments'>
-                <% post.recents_comments.each do |comment|%>
-                <ul>
-                    <li> <%=comment.author.name%>:<%=comment.text%></li>
-                </ul>
-            <%end%>
+                <% post.comments.each do |comment|%>
+                    <ul>
+                        <li><%=comment.author.name%>: <%=comment.text%></li>
+                    </ul>
+                <%end%>
             </div>
         <% end %>
         <button class='buttonstyle' type='button'>
