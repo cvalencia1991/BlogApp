@@ -16,8 +16,8 @@
     <div class= 'wraperusers'>
         <% @user.recents_post.each do |post| %>
             <div class='titleposts'>
-               <h4>Post:<%= post.id%> <%=post.title%></h4>
-               <p><%= post.text%></p>
+               <h4><%= link_to user_post_path(@user, post) do %>Post:<%= post.id%><%end%><%=post.title%></h4>
+                    <p><%= post.text%></p>
                <p>
                 <div class = 'counter'>
                     <p>comments:<%=post.comments_counter%></p>
