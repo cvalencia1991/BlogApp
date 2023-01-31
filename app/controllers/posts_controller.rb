@@ -16,8 +16,6 @@ class PostsController < ApplicationController
     @post = Post.new(post_params)
     if @post.save
       redirect_to user_path(current_user), notice: 'Post was successfully created.'
-    elsif @like.save
-      redirect_to user_path(current_user), notice: 'like was successfully created.'
     else
       render :new
     end
