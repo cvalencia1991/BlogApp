@@ -1,0 +1,114 @@
+have_func: checking for rb_category_warn()... -------------------- yes
+
+PATH=".;C:/Ruby31-x64/lib;C:\Ruby31-x64\bin;C:\Ruby31-x64\msys64\ucrt64\bin;C:\Ruby31-x64\msys64\usr\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python311\Scripts\;C:\Python311\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\ProgramData\chocolatey\bin;C:\Program Files\dotnet\;C:\Program Files (x86)\HP\Common\HPDestPlgIn\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Ruby31-x64\bin;C:\Ruby32-x64\bin;C:\Users\cesar\AppData\Local\Microsoft\WindowsApps;C:\Users\cesar\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\cesar\.dotnet\tools;C:\sqlite3;C:\tools\dart-sdk\bin;C:\Users\cesar\AppData\Roaming\Pub\Cache\bin;C:\Users\cesar\AppData\Roaming\npm" "gcc -o conftest.exe -IC:/Ruby31-x64/include/ruby-3.1.0/x64-mingw-ucrt -IC:/Ruby31-x64/include/ruby-3.1.0/ruby/backward -IC:/Ruby31-x64/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong conftest.c  -L. -LC:/Ruby31-x64/lib -L. -pipe -s -fstack-protector-strong -Wl,--no-as-needed  -m64   -lx64-ucrt-ruby310  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return !!argv[argc];
+8: }
+/* end */
+
+PATH=".;C:/Ruby31-x64/lib;C:\Ruby31-x64\bin;C:\Ruby31-x64\msys64\ucrt64\bin;C:\Ruby31-x64\msys64\usr\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python311\Scripts\;C:\Python311\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\ProgramData\chocolatey\bin;C:\Program Files\dotnet\;C:\Program Files (x86)\HP\Common\HPDestPlgIn\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Ruby31-x64\bin;C:\Ruby32-x64\bin;C:\Users\cesar\AppData\Local\Microsoft\WindowsApps;C:\Users\cesar\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\cesar\.dotnet\tools;C:\sqlite3;C:\tools\dart-sdk\bin;C:\Users\cesar\AppData\Roaming\Pub\Cache\bin;C:\Users\cesar\AppData\Roaming\npm" "gcc -o conftest.exe -IC:/Ruby31-x64/include/ruby-3.1.0/x64-mingw-ucrt -IC:/Ruby31-x64/include/ruby-3.1.0/ruby/backward -IC:/Ruby31-x64/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong conftest.c  -L. -LC:/Ruby31-x64/lib -L. -pipe -s -fstack-protector-strong -Wl,--no-as-needed  -m64   -lx64-ucrt-ruby310  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return !!argv[argc];
+16: }
+17: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_category_warn; return !p; }
+/* end */
+
+--------------------
+
+have_var: checking for timezone in time.h with  -Werror... -------------------- no
+
+PATH=".;C:/Ruby31-x64/lib;C:\Ruby31-x64\bin;C:\Ruby31-x64\msys64\ucrt64\bin;C:\Ruby31-x64\msys64\usr\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python311\Scripts\;C:\Python311\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\ProgramData\chocolatey\bin;C:\Program Files\dotnet\;C:\Program Files (x86)\HP\Common\HPDestPlgIn\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Ruby31-x64\bin;C:\Ruby32-x64\bin;C:\Users\cesar\AppData\Local\Microsoft\WindowsApps;C:\Users\cesar\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\cesar\.dotnet\tools;C:\sqlite3;C:\tools\dart-sdk\bin;C:\Users\cesar\AppData\Roaming\Pub\Cache\bin;C:\Users\cesar\AppData\Roaming\npm" "gcc -IC:/Ruby31-x64/include/ruby-3.1.0/x64-mingw-ucrt -IC:/Ruby31-x64/include/ruby-3.1.0/ruby/backward -IC:/Ruby31-x64/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong -m64  -Werror -c conftest.c"
+conftest.c: In function 't':
+conftest.c:18:1: error: 'timezone' is deprecated: Only provided for source compatibility; this variable might not always be accurate when linking to UCRT. [-Werror=deprecated-declarations]
+   18 | int t(void) { const volatile void *volatile p; p = &(&timezone)[0]; return !p; }
+      | ^~~
+In file included from C:/Ruby31-x64/msys64/ucrt64/include/iptypes.h:16,
+                 from C:/Ruby31-x64/msys64/ucrt64/include/iphlpapi.h:17,
+                 from C:/Ruby31-x64/include/ruby-3.1.0/ruby/win32.h:44,
+                 from C:/Ruby31-x64/include/ruby-3.1.0/ruby/internal/dosish.h:38,
+                 from C:/Ruby31-x64/include/ruby-3.1.0/ruby/defines.h:78,
+                 from C:/Ruby31-x64/include/ruby-3.1.0/ruby/ruby.h:25,
+                 from C:/Ruby31-x64/include/ruby-3.1.0/ruby.h:38,
+                 from conftest.c:1:
+C:/Ruby31-x64/msys64/ucrt64/include/time.h:286:23: note: declared here
+  286 |   _CRTIMP extern long timezone __MINGW_ATTRIB_DEPRECATED_UCRT;
+      |                       ^~~~~~~~
+cc1.exe: all warnings being treated as errors
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: #include <time.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     int (* volatile tp)(void)=(int (*)(void))&t;
+13:     printf("%d", (*tp)());
+14:   }
+15: 
+16:   return !!argv[argc];
+17: }
+18: int t(void) { const volatile void *volatile p; p = &(&timezone)[0]; return !p; }
+/* end */
+
+--------------------
+
+have_var: checking for altzone in time.h with  -Werror... -------------------- no
+
+PATH=".;C:/Ruby31-x64/lib;C:\Ruby31-x64\bin;C:\Ruby31-x64\msys64\ucrt64\bin;C:\Ruby31-x64\msys64\usr\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python311\Scripts\;C:\Python311\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\ProgramData\chocolatey\bin;C:\Program Files\dotnet\;C:\Program Files (x86)\HP\Common\HPDestPlgIn\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Ruby31-x64\bin;C:\Ruby32-x64\bin;C:\Users\cesar\AppData\Local\Microsoft\WindowsApps;C:\Users\cesar\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\cesar\.dotnet\tools;C:\sqlite3;C:\tools\dart-sdk\bin;C:\Users\cesar\AppData\Roaming\Pub\Cache\bin;C:\Users\cesar\AppData\Roaming\npm" "gcc -IC:/Ruby31-x64/include/ruby-3.1.0/x64-mingw-ucrt -IC:/Ruby31-x64/include/ruby-3.1.0/ruby/backward -IC:/Ruby31-x64/include/ruby-3.1.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong -m64  -Werror -c conftest.c"
+conftest.c: In function 't':
+conftest.c:18:55: error: 'altzone' undeclared (first use in this function)
+   18 | int t(void) { const volatile void *volatile p; p = &(&altzone)[0]; return !p; }
+      |                                                       ^~~~~~~
+conftest.c:18:55: note: each undeclared identifier is reported only once for each function it appears in
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: #include <time.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     int (* volatile tp)(void)=(int (*)(void))&t;
+13:     printf("%d", (*tp)());
+14:   }
+15: 
+16:   return !!argv[argc];
+17: }
+18: int t(void) { const volatile void *volatile p; p = &(&altzone)[0]; return !p; }
+/* end */
+
+--------------------
+

@@ -1,0 +1,64 @@
+Discourse/NoChdir:
+  Enabled: true
+  Exclude:
+    - 'spec/**/*' # Specs are run sequentially, so chdir can be used
+    - 'plugins/*/spec/**/*'
+
+Discourse/NoTimeNewWithoutArgs:
+  Enabled: true
+
+Discourse/NoURIEscapeEncode:
+  Enabled: true
+
+Discourse/NoAddReferenceOrAliasesActiveRecordMigration:
+  Enabled: true
+  Include:
+  - "**/db/migrate/*"
+  - "**/db/post_migrate/*"
+
+Discourse/NoNokogiriHtmlFragment:
+  Enabled: true
+
+Discourse/NoResetColumnInformationInMigrations:
+  Enabled: false
+  Include:
+  - "**/db/migrate/*"
+  - "**/db/post_migrate/*"
+
+# Specs
+
+Discourse/NoDirectMultisiteManipulation:
+  Enabled: true
+  Patterns:
+  - _spec.rb
+  - "(?:^|/)spec/"
+
+Discourse/TimeEqMatcher:
+  Enabled: true
+  Patterns:
+  - _spec.rb
+  - "(?:^|/)spec/"
+
+Discourse/NoJsonParseResponse:
+  Enabled: false
+  Patterns:
+  - _spec.rb
+  - "(?:^|/)spec/"
+
+Discourse/NoMockingJobs:
+  Enabled: true
+  Patterns:
+  - _spec.rb
+  - "(?:^|/)spec/"
+
+Discourse/OnlyTopLevelMultisiteSpecs:
+  Enabled: true
+  Patterns:
+  - _spec.rb
+  - "(?:^|/)spec/"
+
+Discourse/NoMixingMultisiteAndStandardSpecs:
+  Enabled: true
+  Patterns:
+  - _spec.rb
+  - "(?:^|/)spec/"

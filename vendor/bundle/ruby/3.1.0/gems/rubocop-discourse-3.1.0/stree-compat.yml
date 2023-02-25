@@ -1,0 +1,21 @@
+require:
+  - rubocop-discourse
+
+inherit_from:
+  - ./rubocop-core.yml
+  - ./rubocop-rspec.yml
+
+AllCops:
+  TargetRubyVersion: 2.6
+  DisabledByDefault: true
+  Exclude:
+    - "db/schema.rb"
+    - "bundle/**/*"
+    - "vendor/**/*"
+    - "**/node_modules/**/*"
+    - "public/**/*"
+    - "plugins/**/gems/**/*"
+    - "plugins/**/vendor/**/*"
+
+Discourse:
+  Enabled: true

@@ -1,0 +1,18 @@
+current directory: C:/Users/cesar/Desktop/BlogApp/vendor/bundle/ruby/3.1.0/gems/racc-1.6.2/ext/racc/cparse
+C:/Ruby31-x64/bin/ruby.exe -I C:/Ruby31-x64/lib/ruby/3.1.0 extconf.rb
+checking for rb_block_call()... yes
+checking for rb_ary_subseq()... yes
+creating Makefile
+
+current directory: C:/Users/cesar/Desktop/BlogApp/vendor/bundle/ruby/3.1.0/gems/racc-1.6.2/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20230225-25208-1qgg9q sitelibdir\=./.gem.20230225-25208-1qgg9q clean
+
+current directory: C:/Users/cesar/Desktop/BlogApp/vendor/bundle/ruby/3.1.0/gems/racc-1.6.2/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20230225-25208-1qgg9q sitelibdir\=./.gem.20230225-25208-1qgg9q
+generating cparse-x64-mingw-ucrt.def
+compiling cparse.c
+linking shared-object racc/cparse.so
+
+current directory: C:/Users/cesar/Desktop/BlogApp/vendor/bundle/ruby/3.1.0/gems/racc-1.6.2/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20230225-25208-1qgg9q sitelibdir\=./.gem.20230225-25208-1qgg9q install
+/usr/bin/install -c -m 0755 cparse.so ./.gem.20230225-25208-1qgg9q/racc

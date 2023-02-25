@@ -5,6 +5,8 @@ ruby '3.1.3'
 gem 'bullet', group: 'development'
 gem 'devise'
 gem 'rack-proxy'
+gem 'rubocop', '>= 1.0', '< 2.0'
+gem 'rubocop-discourse'
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 7.0.4'
 

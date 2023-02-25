@@ -1,0 +1,232 @@
+require:
+  - rubocop-rspec
+
+RSpec/AnyInstance:
+  Enabled: false # To be decided
+
+RSpec/AroundBlock:
+  Enabled: true
+
+RSpec/BeforeAfterAll:
+  Enabled: true
+
+RSpec/ChangeByZero:
+  Enabled: true
+
+RSpec/ContextMethod:
+  Enabled: true
+
+RSpec/ContextWording:
+  Enabled: true
+  Prefixes:
+    - when
+    - with
+    - without
+    - for
+    - while
+    - if
+    - as
+    - after
+
+RSpec/DescribeClass:
+  Enabled: true
+  Exclude:
+    - "**/spec/features/**/*"
+    - "**/spec/requests/**/*"
+    - "**/spec/routing/**/*"
+    - "**/spec/system/**/*"
+    - "**/spec/views/**/*"
+    - "**/spec/initializers/**/*"
+    - "**/spec/integration/**/*"
+    - "**/spec/integrity/**/*"
+    - "**/spec/tasks/**/*"
+    - "**/spec/lib/freedom_patches/**/*"
+    - "**/spec/multisite/**/*"
+
+RSpec/DescribeMethod:
+  Enabled: true
+
+RSpec/DescribeSymbol:
+  Enabled: false # To be decided
+
+RSpec/DescribedClass:
+  Enabled: false # To be decided
+
+RSpec/DescribedClassModuleWrapping:
+  Enabled: false # To be decided
+
+RSpec/EmptyExampleGroup:
+  Enabled: true
+  Exclude:
+    - 'spec/requests/api/*'
+
+RSpec/EmptyLineAfterExample:
+  Enabled: false # TODO
+
+RSpec/EmptyLineAfterExampleGroup:
+  Enabled: false # TODO
+
+RSpec/EmptyLineAfterFinalLet:
+  Enabled: false # TODO
+
+RSpec/EmptyLineAfterHook:
+  Enabled: false # TODO
+
+RSpec/EmptyLineAfterSubject:
+  Enabled: false # TODO
+
+RSpec/ExampleLength:
+  Enabled: false # To be decided
+
+RSpec/ExampleWithoutDescription:
+  Enabled: true
+
+RSpec/ExampleWording:
+  Enabled: false # TODO
+
+RSpec/ExpectActual:
+  Enabled: true
+
+RSpec/ExpectChange:
+  Enabled: false # To be decided
+
+RSpec/ExpectInHook:
+  Enabled: false # To be decided
+
+RSpec/ExpectOutput:
+  Enabled: true
+
+RSpec/FilePath:
+  Enabled: false # To be decided
+
+RSpec/Focus:
+  Enabled: true
+
+RSpec/HookArgument:
+  Enabled: false # TODO
+
+RSpec/HooksBeforeExamples:
+  Enabled: false # TODO
+
+RSpec/ImplicitBlockExpectation:
+  Enabled: true
+
+RSpec/ImplicitExpect:
+  Enabled: false # To be decided
+
+RSpec/ImplicitSubject:
+  Enabled: false # To be decided
+
+RSpec/InstanceSpy:
+  Enabled: true
+
+RSpec/InstanceVariable:
+  Enabled: false # TODO
+
+RSpec/ItBehavesLike:
+  Enabled: true
+
+RSpec/IteratedExpectation:
+  Enabled: false # To be decided
+
+RSpec/LeadingSubject:
+  Enabled: false # TODO
+
+RSpec/LeakyConstantDeclaration:
+  Enabled: false # To be decided
+
+RSpec/LetBeforeExamples:
+  Enabled: false # TODO
+
+RSpec/LetSetup:
+  Enabled: false # TODO
+
+RSpec/MessageChain:
+  Enabled: true
+
+RSpec/MessageSpies:
+  Enabled: true
+
+RSpec/MissingExampleGroupArgument:
+  Enabled: true
+
+RSpec/MultipleDescribes:
+  Enabled: false # TODO
+
+RSpec/MultipleSubjects:
+  Enabled: true
+
+RSpec/NamedSubject:
+  Enabled: false # To be decided
+
+RSpec/NestedGroups:
+  Enabled: false # To be decided
+
+RSpec/OverwritingSetup:
+  Enabled: true
+
+RSpec/ReceiveCounts:
+  Enabled: true
+
+RSpec/ReceiveNever:
+  Enabled: true
+
+RSpec/RepeatedDescription:
+  Enabled: false # TODO
+
+RSpec/RepeatedExample:
+  Enabled: false # TODO
+
+RSpec/RepeatedExampleGroupBody:
+  Enabled: false # TODO
+
+RSpec/RepeatedExampleGroupDescription:
+  Enabled: false # TODO
+
+RSpec/ReturnFromStub:
+  Enabled: true
+
+RSpec/ScatteredSetup:
+  Enabled: false # TODO
+
+RSpec/SharedContext:
+  Enabled: true
+
+RSpec/SharedExamples:
+  Enabled: true
+
+RSpec/SingleArgumentMessageChain:
+  Enabled: true
+
+RSpec/SubjectStub:
+  Enabled: true
+
+RSpec/UnspecifiedException:
+  Enabled: true
+
+RSpec/VerifiedDoubles:
+  Enabled: true
+
+RSpec/VoidExpect:
+  Enabled: true
+
+RSpec/Yield:
+  Enabled: true
+
+RSpec/Capybara/CurrentPathExpectation:
+  Enabled: true
+
+RSpec/Capybara/FeatureMethods:
+  Enabled: true
+
+RSpec/FactoryBot/AttributeDefinedStatically:
+  Enabled: true
+
+RSpec/FactoryBot/CreateList:
+  Enabled: true
+
+RSpec/FactoryBot/FactoryClassName:
+  Enabled: true
+
+RSpec/Rails/HttpStatus:
+  Enabled: true

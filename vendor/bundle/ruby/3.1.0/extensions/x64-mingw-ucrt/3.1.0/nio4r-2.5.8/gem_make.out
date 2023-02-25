@@ -1,0 +1,14 @@
+current directory: C:/Users/cesar/Desktop/BlogApp/vendor/bundle/ruby/3.1.0/gems/nio4r-2.5.8/ext/nio4r
+C:/Ruby31-x64/bin/ruby.exe -I C:/Ruby31-x64/lib/ruby/3.1.0 extconf.rb
+
+current directory: C:/Users/cesar/Desktop/BlogApp/vendor/bundle/ruby/3.1.0/gems/nio4r-2.5.8/ext/nio4r
+make DESTDIR\= sitearchdir\=./.gem.20230225-25208-wz4nna sitelibdir\=./.gem.20230225-25208-wz4nna clean
+make: *** No hay ninguna regla para construir el objetivo 'clean'.  Alto.
+
+current directory: C:/Users/cesar/Desktop/BlogApp/vendor/bundle/ruby/3.1.0/gems/nio4r-2.5.8/ext/nio4r
+make DESTDIR\= sitearchdir\=./.gem.20230225-25208-wz4nna sitelibdir\=./.gem.20230225-25208-wz4nna
+make: No se hace nada para 'all'.
+
+current directory: C:/Users/cesar/Desktop/BlogApp/vendor/bundle/ruby/3.1.0/gems/nio4r-2.5.8/ext/nio4r
+make DESTDIR\= sitearchdir\=./.gem.20230225-25208-wz4nna sitelibdir\=./.gem.20230225-25208-wz4nna install
+make: No se hace nada para 'install'.

@@ -1,0 +1,3 @@
+inherit_from:
+  - ./stree-compat.yml
+  - ./rubocop-layout.yml
